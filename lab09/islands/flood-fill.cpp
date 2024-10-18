@@ -4,7 +4,7 @@
 // validate
 // check the indices and additional conditions after which you would use dfs
 template <typename T1, typename T2> bool DFS::validate(T1& M, int i, int j, T2& v) {
-    
+   return (i >=0 && i < M.size()) && (j >=0 && j < M[0].size()) && (M[i][j] == v);
 }
 
 // terminate

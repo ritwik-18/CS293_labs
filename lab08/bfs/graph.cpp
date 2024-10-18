@@ -47,3 +47,49 @@ void bfs(Graph g, int source,unordered_map<int, int>& parent)
     return;
 };
 
+// class Graph
+// {
+
+//     // vector<vector<int>> adj;
+//     // int vertices;
+// public:
+//     vector<vector<int>>adj;
+//     int vertices;
+//     Graph(int no_of_vertices, vector<pair<int,int> > edges){
+//         adj.resize(no_of_vertices);
+        
+//         for (const auto& edge:edges){
+//             adj[edge.first].push_back(edge.second);
+//             adj[edge.second].push_back(edge.first);
+//         }
+//         vertices = no_of_vertices;
+//         return;
+//     };
+// };
+
+
+// void bfs(Graph g, int source,unordered_map<int, int>& parent)
+// {
+//     int n=g.vertices;
+//     int visited[n];
+//     for(int i=0;i<n;i++){
+//         visited[i]=0;
+//     }
+//     queue<int>q;
+//     q.push(source);
+//     parent[source]= -1;
+//     visited[source] = 1;
+//     while(!q.empty()){
+//         source=q.front();
+//         q.pop();
+//         for (const auto & i : g.adj[source]){
+//             if(visited[i]==0){
+//             visited[i]=1;
+//             q.push(i);
+//             parent[i]=source;
+//             }
+//         }
+//     }
+
+//     return;
+// };

@@ -37,7 +37,7 @@ void Graph::addNode(int v) {
 void Graph::addEdge(int s, int t) {
     addNode(s);
     addNode(t);
-    if(std::find(nodes[s]->adj.begin(), nodes[s]->adj.end(), t) != nodes[s]->adj.end())
+    if(std::ranges::find(nodes[s]->adj.begin(), nodes[s]->adj.end(), t) != nodes[s]->adj.end())
         return;
 
     nodes[s]->addNeighbour(t);
